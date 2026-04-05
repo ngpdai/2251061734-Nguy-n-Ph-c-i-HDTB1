@@ -22,7 +22,7 @@ export const portfolioData = {
           id: 1,
           company: "WinCommerce (WinMart+)",
           position: "Customer Experience Consultant",
-          period: "2023 - 2024",
+          period: "2022 - 2023",
           summary: "Responsible for customer consultation and support at retail points, maintaining high customer satisfaction indices.",
           details: [
             "Provided expert consultation and support to customers at retail locations, ensuring customer satisfaction metrics remained at optimal levels",
@@ -30,13 +30,14 @@ export const portfolioData = {
             "Optimized store operations and enhanced service quality according to WinMart+ chain standards",
             "Analyzed customer feedback patterns to identify service improvement opportunities",
             "Contributed to maintaining consistent brand experience across multiple touchpoints"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
         },
         {
           id: 2,
           company: "Abby & Savor",
           position: "Production Quality & Operations Associate",
-          period: "2022 - 2023",
+          period: "2025 - 2026",
           summary: "Executed quality control processes on production lines, ensuring all outputs met technical and commercial standards.",
           details: [
             "Implemented quality control procedures across production lines, ensuring all outputs met brand technical and commercial standards",
@@ -44,7 +45,8 @@ export const portfolioData = {
             "Contributed directly to supply chain stability and consistency for Abby & Savor - Vietnam's leading baking tools and ingredients brand",
             "Maintained detailed quality documentation and reporting systems",
             "Identified process inefficiencies and suggested operational improvements"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
         },
         {
           id: 3,
@@ -58,7 +60,8 @@ export const portfolioData = {
             "Developed self-management skills, strategic thinking, and ability to deliver consistent results under real-world time pressures",
             "Built long-term client relationships through reliable delivery and measurable results",
             "Adapted strategies based on performance metrics and client feedback"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
         }
       ]
     },
@@ -83,7 +86,8 @@ export const portfolioData = {
             "Strong academic performance in core IT subjects",
             "Active participation in programming projects and assignments",
             "Developed multiple applications using C#, C++, and Java"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
         }
       ],
       certifications: [
@@ -96,7 +100,8 @@ export const portfolioData = {
             "Proficient in understanding technical English documents",
             "Capable of basic professional communication in work environments",
             "Able to comprehend and analyze English business documentation"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
         }
       ]
     },
@@ -110,37 +115,43 @@ export const portfolioData = {
             id: 1,
             name: "C#",
             level: 75,
-            description: "Experienced in developing desktop applications, implementing OOP principles, and solving complex algorithmic problems using C#."
+            description: "Experienced in developing desktop applications, implementing OOP principles, and solving complex algorithmic problems using C#.",
+            bgGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
           },
           {
             id: 2,
             name: "C++",
             level: 70,
-            description: "Proficient in C++ for data structures, algorithms, and performance-critical applications."
+            description: "Proficient in C++ for data structures, algorithms, and performance-critical applications.",
+            bgGradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
           },
           {
             id: 3,
             name: "Java",
             level: 70,
-            description: "Skilled in Java development, object-oriented design, and application development."
+            description: "Skilled in Java development, object-oriented design, and application development.",
+            bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
           },
           {
             id: 4,
             name: "Database & SQL",
             level: 65,
-            description: "Strong understanding of database design, SQL queries, data modeling, and database management systems."
+            description: "Strong understanding of database design, SQL queries, data modeling, and database management systems.",
+            bgGradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
           },
           {
             id: 5,
             name: "AI & Machine Learning",
             level: 60,
-            description: "Foundational knowledge in AI concepts, machine learning algorithms, and practical applications in business contexts."
+            description: "Foundational knowledge in AI concepts, machine learning algorithms, and practical applications in business contexts.",
+            bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
           },
           {
             id: 6,
             name: "Data Analysis",
             level: 65,
-            description: "Ability to extract insights from data, create reports, and support data-driven decision making."
+            description: "Ability to extract insights from data, create reports, and support data-driven decision making.",
+            bgGradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)"
           }
         ]
       },
@@ -150,32 +161,38 @@ export const portfolioData = {
           {
             id: 1,
             name: "Problem Solving",
-            description: "Strong logical thinking and analytical approach to breaking down complex business and technical challenges."
+            description: "Strong logical thinking and analytical approach to breaking down complex business and technical challenges.",
+            bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
           },
           {
             id: 2,
             name: "Team Collaboration",
-            description: "Proven ability to work effectively in diverse team environments across retail, production, and consulting contexts."
+            description: "Proven ability to work effectively in diverse team environments across retail, production, and consulting contexts.",
+            bgGradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"
           },
           {
             id: 3,
             name: "Attention to Detail",
-            description: "Meticulous and careful approach to quality control, documentation, and project delivery."
+            description: "Meticulous and careful approach to quality control, documentation, and project delivery.",
+            bgGradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)"
           },
           {
             id: 4,
             name: "Adaptability",
-            description: "Positive learning attitude with willingness to embrace new challenges and technologies."
+            description: "Positive learning attitude with willingness to embrace new challenges and technologies.",
+            bgGradient: "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)"
           },
           {
             id: 5,
             name: "Responsibility & Discipline",
-            description: "High sense of accountability and commitment to meeting deadlines and quality standards."
+            description: "High sense of accountability and commitment to meeting deadlines and quality standards.",
+            bgGradient: "linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)"
           },
           {
             id: 6,
             name: "Self-Management",
-            description: "Demonstrated ability to manage multiple independent projects and deliver results under pressure."
+            description: "Demonstrated ability to manage multiple independent projects and deliver results under pressure.",
+            bgGradient: "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)"
           }
         ]
       }
@@ -228,7 +245,7 @@ export const portfolioData = {
           id: 1,
           company: "WinCommerce (WinMart+)",
           position: "Chuyên Viên Tư Vấn Trải Nghiệm Khách Hàng",
-          period: "2023 - 2024",
+          period: "2022 - 2023",
           summary: "Chịu trách nhiệm tư vấn và hỗ trợ khách hàng tại điểm bán, đảm bảo chỉ số hài lòng khách hàng ở mức cao nhất.",
           details: [
             "Cung cấp tư vấn chuyên môn và hỗ trợ khách hàng tại các điểm bán lẻ, đảm bảo chỉ số hài lòng khách hàng được duy trì ở mức tối ưu",
@@ -236,13 +253,14 @@ export const portfolioData = {
             "Tối ưu hóa hiệu suất vận hành tại cửa hàng và nâng cao chất lượng dịch vụ theo tiêu chuẩn chuỗi WinMart+",
             "Phân tích các mẫu phản hồi của khách hàng để xác định cơ hội cải thiện dịch vụ",
             "Đóng góp vào việc duy trì trải nghiệm thương hiệu nhất quán trên nhiều điểm tiếp xúc"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
         },
         {
           id: 2,
           company: "Abby & Savor",
           position: "Chuyên Viên Chất Lượng & Vận Hành Sản Xuất",
-          period: "2022 - 2023",
+          period: "2025 - 2026",
           summary: "Thực thi quy trình kiểm soát chất lượng sản phẩm tại dây chuyền vận hành, đảm bảo đầu ra đáp ứng tiêu chuẩn kỹ thuật và thương mại.",
           details: [
             "Thực hiện quy trình kiểm soát chất lượng trên dây chuyền sản xuất, đảm bảo toàn bộ đầu ra đáp ứng tiêu chuẩn kỹ thuật và thương mại của thương hiệu",
@@ -250,7 +268,8 @@ export const portfolioData = {
             "Đóng góp trực tiếp vào tính ổn định và nhất quán của chuỗi cung ứng Abby & Savor - thương hiệu dụng cụ và nguyên liệu làm bánh hàng đầu Việt Nam",
             "Duy trì hệ thống tài liệu và báo cáo chất lượng chi tiết",
             "Xác định các điểm kém hiệu quả trong quy trình và đề xuất cải tiến vận hành"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
         },
         {
           id: 3,
@@ -264,7 +283,8 @@ export const portfolioData = {
             "Phát triển kỹ năng tự quản lý, tư duy chiến thuật và khả năng duy trì kết quả ổn định dưới áp lực thời gian thực tế",
             "Xây dựng mối quan hệ khách hàng lâu dài thông qua việc cung cấp kết quả đáng tin cậy và có thể đo lường",
             "Điều chỉnh chiến lược dựa trên chỉ số hiệu suất và phản hồi của khách hàng"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
         }
       ]
     },
@@ -289,7 +309,8 @@ export const portfolioData = {
             "Kết quả học tập xuất sắc trong các môn học CNTT cốt lõi",
             "Tích cực tham gia các dự án và bài tập lập trình",
             "Phát triển nhiều ứng dụng sử dụng C#, C++ và Java"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
         }
       ],
       certifications: [
@@ -302,7 +323,8 @@ export const portfolioData = {
             "Thành thạo đọc hiểu tài liệu kỹ thuật tiếng Anh",
             "Có khả năng giao tiếp chuyên nghiệp cơ bản trong môi trường làm việc",
             "Có thể hiểu và phân tích tài liệu kinh doanh tiếng Anh"
-          ]
+          ],
+          bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
         }
       ]
     },
@@ -316,37 +338,43 @@ export const portfolioData = {
             id: 1,
             name: "C#",
             level: 75,
-            description: "Có kinh nghiệm phát triển ứng dụng desktop, triển khai nguyên lý OOP và giải quyết các vấn đề thuật toán phức tạp bằng C#."
+            description: "Có kinh nghiệm phát triển ứng dụng desktop, triển khai nguyên lý OOP và giải quyết các vấn đề thuật toán phức tạp bằng C#.",
+            bgGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
           },
           {
             id: 2,
             name: "C++",
             level: 70,
-            description: "Thành thạo C++ cho cấu trúc dữ liệu, thuật toán và các ứng dụng yêu cầu hiệu suất cao."
+            description: "Thành thạo C++ cho cấu trúc dữ liệu, thuật toán và các ứng dụng yêu cầu hiệu suất cao.",
+            bgGradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
           },
           {
             id: 3,
             name: "Java",
             level: 70,
-            description: "Thành thạo phát triển Java, thiết kế hướng đối tượng và phát triển ứng dụng."
+            description: "Thành thạo phát triển Java, thiết kế hướng đối tượng và phát triển ứng dụng.",
+            bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
           },
           {
             id: 4,
             name: "Cơ sở dữ liệu & SQL",
             level: 65,
-            description: "Hiểu biết vững chắc về thiết kế cơ sở dữ liệu, truy vấn SQL, mô hình hóa dữ liệu và hệ thống quản lý cơ sở dữ liệu."
+            description: "Hiểu biết vững chắc về thiết kế cơ sở dữ liệu, truy vấn SQL, mô hình hóa dữ liệu và hệ thống quản lý cơ sở dữ liệu.",
+            bgGradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
           },
           {
             id: 5,
             name: "AI & Machine Learning",
             level: 60,
-            description: "Kiến thức nền tảng về các khái niệm AI, thuật toán học máy và ứng dụng thực tế trong bối cảnh kinh doanh."
+            description: "Kiến thức nền tảng về các khái niệm AI, thuật toán học máy và ứng dụng thực tế trong bối cảnh kinh doanh.",
+            bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
           },
           {
             id: 6,
             name: "Phân Tích Dữ Liệu",
             level: 65,
-            description: "Khả năng trích xuất thông tin chi tiết từ dữ liệu, tạo báo cáo và hỗ trợ ra quyết định dựa trên dữ liệu."
+            description: "Khả năng trích xuất thông tin chi tiết từ dữ liệu, tạo báo cáo và hỗ trợ ra quyết định dựa trên dữ liệu.",
+            bgGradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)"
           }
         ]
       },
@@ -356,32 +384,38 @@ export const portfolioData = {
           {
             id: 1,
             name: "Giải Quyết Vấn Đề",
-            description: "Tư duy logic mạnh mẽ và cách tiếp cận phân tích để phân tích các thách thức kinh doanh và kỹ thuật phức tạp."
+            description: "Tư duy logic mạnh mẽ và cách tiếp cận phân tích để phân tích các thách thức kinh doanh và kỹ thuật phức tạp.",
+            bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
           },
           {
             id: 2,
             name: "Làm Việc Nhóm",
-            description: "Khả năng làm việc hiệu quả đã được chứng minh trong môi trường nhóm đa dạng trên các bối cảnh bán lẻ, sản xuất và tư vấn."
+            description: "Khả năng làm việc hiệu quả đã được chứng minh trong môi trường nhóm đa dạng trên các bối cảnh bán lẻ, sản xuất và tư vấn.",
+            bgGradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"
           },
           {
             id: 3,
-            name: "Chú Ý Đến Chi Tiết",
-            description: "Cách tiếp cận tỉ mỉ và cẩn thận đối với kiểm soát chất lượng, tài liệu và giao hàng dự án."
+            name: "Chú ý Đến Chi Tiết",
+            description: "Cách tiếp cận tỉ mỉ và cẩn thận đối với kiểm soát chất lượng, tài liệu và giao hàng dự án.",
+            bgGradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)"
           },
           {
             id: 4,
             name: "Khả Năng Thích Ứng",
-            description: "Thái độ học hỏi tích cực với sự sẵn sàng đón nhận những thách thức và công nghệ mới."
+            description: "Thái độ học hỏi tích cực với sự sẵn sàng đón nhận những thách thức và công nghệ mới.",
+            bgGradient: "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)"
           },
           {
             id: 5,
             name: "Trách Nhiệm & Kỷ Luật",
-            description: "Ý thức trách nhiệm cao và cam kết đáp ứng thời hạn và tiêu chuẩn chất lượng."
+            description: "Ý thức trách nhiệm cao và cam kết đáp ứng thời hạn và tiêu chuẩn chất lượng.",
+            bgGradient: "linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)"
           },
           {
             id: 6,
             name: "Tự Quản Lý",
-            description: "Khả năng quản lý nhiều dự án độc lập và mang lại kết quả dưới áp lực đã được chứng minh."
+            description: "Khả năng quản lý nhiều dự án độc lập và mang lại kết quả dưới áp lực đã được chứng minh.",
+            bgGradient: "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)"
           }
         ]
       }

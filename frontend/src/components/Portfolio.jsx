@@ -1,38 +1,30 @@
 import React, { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { portfolioData } from '../data/mock';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
 import { Progress } from './ui/progress';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 import { Avatar, AvatarFallback } from './ui/avatar';
-import { Mail, Phone, MapPin, Clock, Facebook, Youtube, Globe, ChevronDown, ChevronUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Facebook, Youtube, Globe, ChevronRight } from 'lucide-react';
 import './Portfolio.css';
 
 const Portfolio = () => {
-  const [language, setLanguage] = useState('en');
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [dialogOpen, setDialogOpen] = useState(false);
-  const [expandedCards, setExpandedCards] = useState({});
+  const { lang } = useParams();
+  const navigate = useNavigate();
+  const [language, setLanguage] = useState(lang || 'en');
   
   const data = portfolioData[language];
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'vi' : 'en');
+    const newLang = language === 'en' ? 'vi' : 'en';
+    setLanguage(newLang);
+    navigate(`/${newLang}`);
   };
 
-  const openDialog = (item, type) => {
-    setSelectedItem({ ...item, type });
-    setDialogOpen(true);
-  };
-
-  const toggleCard = (section, id) => {
-    const key = `${section}-${id}`;
-    setExpandedCards(prev => ({
-      ...prev,
-      [key]: !prev[key]
-    }));
+  const navigateToDetail = (type, id) => {
+    navigate(`/${language}/detail/${type}/${id}`);
   };
 
   const scrollToSection = (id) => {
@@ -121,28 +113,12 @@ const Portfolio = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => toggleCard('job', job.id)}
+                    onClick={() => navigateToDetail('job', job.id)}
                     className="details-toggle mt-3"
                   >
-                    {expandedCards[`job-${job.id}`] ? (
-                      <>
-                        <ChevronUp className="h-4 w-4 mr-2" />
-                        {language === 'en' ? 'Hide Details' : 'Ẩn Chi Tiết'}
-                      </>
-                    ) : (
-                      <>
-                        <ChevronDown className="h-4 w-4 mr-2" />
-                        {language === 'en' ? 'Show Details' : 'Xem Chi Tiết'}
-                      </>
-                    )}
+                    <ChevronRight className="h-4 w-4 mr-2" />
+                    {language === 'en' ? 'View Details' : 'Xem Chi Tiết'}
                   </Button>
-                  {expandedCards[`job-${job.id}`] && (
-                    <ul className="details-list">
-                      {job.details.map((detail, idx) => (
-                        <li key={idx} className="detail-item">{detail}</li>
-                      ))}
-                    </ul>
-                  )}
                 </CardContent>
               </Card>
             ))}
@@ -170,41 +146,12 @@ const Portfolio = () => {
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => toggleCard('edu', edu.id)}
+                  onClick={() => navigateToDetail('education', edu.id)}
                   className="details-toggle mt-3"
                 >
-                  {expandedCards[`edu-${edu.id}`] ? (
-                    <>
-                      <ChevronUp className="h-4 w-4 mr-2" />
-                      {language === 'en' ? 'Hide Courses' : 'Ẩn Khóa Học'}
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="h-4 w-4 mr-2" />
-                      {language === 'en' ? 'Show Courses' : 'Xem Khóa Học'}
-                    </>
-                  )}
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  {language === 'en' ? 'View Details' : 'Xem Chi Tiết'}
                 </Button>
-                {expandedCards[`edu-${edu.id}`] && (
-                  <div className="courses-section">
-                    <h4 className="courses-title">
-                      {language === 'en' ? 'Relevant Courses' : 'Các Môn Học Liên Quan'}
-                    </h4>
-                    <ul className="details-list">
-                      {edu.courses.map((course, idx) => (
-                        <li key={idx} className="detail-item">{course}</li>
-                      ))}
-                    </ul>
-                    <h4 className="courses-title mt-4">
-                      {language === 'en' ? 'Achievements' : 'Thành Tích'}
-                    </h4>
-                    <ul className="details-list">
-                      {edu.achievements.map((achievement, idx) => (
-                        <li key={idx} className="detail-item">{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
@@ -226,28 +173,12 @@ const Portfolio = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => toggleCard('cert', cert.id)}
+                    onClick={() => navigateToDetail('certification', cert.id)}
                     className="details-toggle"
                   >
-                    {expandedCards[`cert-${cert.id}`] ? (
-                      <>
-                        <ChevronUp className="h-4 w-4 mr-2" />
-                        {language === 'en' ? 'Hide Details' : 'Ẩn Chi Tiết'}
-                      </>
-                    ) : (
-                      <>
-                        <ChevronDown className="h-4 w-4 mr-2" />
-                        {language === 'en' ? 'Show Details' : 'Xem Chi Tiết'}
-                      </>
-                    )}
+                    <ChevronRight className="h-4 w-4 mr-2" />
+                    {language === 'en' ? 'View Details' : 'Xem Chi Tiết'}
                   </Button>
-                  {expandedCards[`cert-${cert.id}`] && (
-                    <ul className="details-list">
-                      {cert.details.map((detail, idx) => (
-                        <li key={idx} className="detail-item">{detail}</li>
-                      ))}
-                    </ul>
-                  )}
                 </CardContent>
               </Card>
             ))}
@@ -275,24 +206,12 @@ const Portfolio = () => {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => toggleCard('tech-skill', skill.id)}
+                      onClick={() => navigateToDetail('tech-skill', skill.id)}
                       className="details-toggle"
                     >
-                      {expandedCards[`tech-skill-${skill.id}`] ? (
-                        <>
-                          <ChevronUp className="h-4 w-4 mr-2" />
-                          {language === 'en' ? 'Hide' : 'Ẩn'}
-                        </>
-                      ) : (
-                        <>
-                          <ChevronDown className="h-4 w-4 mr-2" />
-                          {language === 'en' ? 'Details' : 'Chi Tiết'}
-                        </>
-                      )}
+                      <ChevronRight className="h-4 w-4 mr-2" />
+                      {language === 'en' ? 'View Details' : 'Xem Chi Tiết'}
                     </Button>
-                    {expandedCards[`tech-skill-${skill.id}`] && (
-                      <p className="skill-description">{skill.description}</p>
-                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -312,24 +231,12 @@ const Portfolio = () => {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => toggleCard('soft-skill', skill.id)}
+                      onClick={() => navigateToDetail('soft-skill', skill.id)}
                       className="details-toggle"
                     >
-                      {expandedCards[`soft-skill-${skill.id}`] ? (
-                        <>
-                          <ChevronUp className="h-4 w-4 mr-2" />
-                          {language === 'en' ? 'Hide' : 'Ẩn'}
-                        </>
-                      ) : (
-                        <>
-                          <ChevronDown className="h-4 w-4 mr-2" />
-                          {language === 'en' ? 'Details' : 'Chi Tiết'}
-                        </>
-                      )}
+                      <ChevronRight className="h-4 w-4 mr-2" />
+                      {language === 'en' ? 'View Details' : 'Xem Chi Tiết'}
                     </Button>
-                    {expandedCards[`soft-skill-${skill.id}`] && (
-                      <p className="skill-description">{skill.description}</p>
-                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -419,30 +326,6 @@ const Portfolio = () => {
           </p>
         </div>
       </footer>
-
-      {/* Dialog for detailed view */}
-      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-        <DialogContent className="dialog-content">
-          <DialogHeader>
-            <DialogTitle>{selectedItem?.name || selectedItem?.position || selectedItem?.school}</DialogTitle>
-            <DialogDescription>
-              {selectedItem?.company || selectedItem?.degree}
-            </DialogDescription>
-          </DialogHeader>
-          <div className="dialog-body">
-            {selectedItem?.details && (
-              <ul className="dialog-list">
-                {selectedItem.details.map((detail, idx) => (
-                  <li key={idx} className="dialog-list-item">{detail}</li>
-                ))}
-              </ul>
-            )}
-            {selectedItem?.description && (
-              <p className="dialog-description">{selectedItem.description}</p>
-            )}
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
