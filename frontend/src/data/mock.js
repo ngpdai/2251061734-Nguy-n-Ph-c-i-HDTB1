@@ -162,37 +162,43 @@ export const portfolioData = {
             id: 1,
             name: "Problem Solving",
             description: "Strong logical thinking and analytical approach to breaking down complex business and technical challenges.",
-            bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
+            detailedDescription: "Ability to analyze complex situations, break down problems into manageable steps, and find efficient solutions. Demonstrated through managing customer complaints at WinMart+ and optimizing game account strategies for clients.",
+            bgImage: "https://source.unsplash.com/1600x900/?puzzle,strategy"
           },
           {
             id: 2,
             name: "Team Collaboration",
             description: "Proven ability to work effectively in diverse team environments across retail, production, and consulting contexts.",
-            bgGradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"
+            detailedDescription: "Experienced in working within fast-paced team environments, coordinating tasks with colleagues, and contributing to shared goals. Practiced during production line work at Abby & Savor and retail operations at WinCommerce.",
+            bgImage: "https://source.unsplash.com/1600x900/?teamwork,collaboration"
           },
           {
             id: 3,
             name: "Attention to Detail",
             description: "Meticulous and careful approach to quality control, documentation, and project delivery.",
-            bgGradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)"
+            detailedDescription: "Strong focus on accuracy and quality control, ensuring every output meets required standards. Applied directly in quality inspection roles at Abby & Savor's production line.",
+            bgImage: "https://source.unsplash.com/1600x900/?precision,focus"
           },
           {
             id: 4,
             name: "Adaptability",
             description: "Positive learning attitude with willingness to embrace new challenges and technologies.",
-            bgGradient: "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)"
+            detailedDescription: "Quick to adjust to new environments, roles, and responsibilities. Successfully transitioned across multiple industries including retail, food production, and digital services.",
+            bgImage: "https://source.unsplash.com/1600x900/?change,flexibility"
           },
           {
             id: 5,
             name: "Responsibility & Discipline",
             description: "High sense of accountability and commitment to meeting deadlines and quality standards.",
-            bgGradient: "linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)"
+            detailedDescription: "Consistently reliable in meeting deadlines and fulfilling commitments. Maintained punctuality and accountability across all work experiences, including freelance client projects.",
+            bgImage: "https://source.unsplash.com/1600x900/?discipline,commitment"
           },
           {
             id: 6,
             name: "Self-Management",
             description: "Demonstrated ability to manage multiple independent projects and deliver results under pressure.",
-            bgGradient: "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)"
+            detailedDescription: "Strong ability to manage personal workload, set priorities, and deliver results independently without close supervision. Proven through managing multiple freelance projects simultaneously.",
+            bgImage: "https://source.unsplash.com/1600x900/?planning,productivity"
           }
         ]
       }
@@ -385,37 +391,43 @@ export const portfolioData = {
             id: 1,
             name: "Giải Quyết Vấn Đề",
             description: "Tư duy logic mạnh mẽ và cách tiếp cận phân tích để phân tích các thách thức kinh doanh và kỹ thuật phức tạp.",
-            bgGradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"
+            detailedDescription: "Khả năng phân tích các tình huống phức tạp, chia nhỏ vấn đề thành các bước có thể quản lý được và tìm ra giải pháp hiệu quả. Được chứng minh thông qua việc quản lý khiếu nại của khách hàng tại WinMart+ và tối ưu hóa chiến lược tài khoản game cho khách hàng.",
+            bgImage: "https://source.unsplash.com/1600x900/?puzzle,strategy"
           },
           {
             id: 2,
             name: "Làm Việc Nhóm",
             description: "Khả năng làm việc hiệu quả đã được chứng minh trong môi trường nhóm đa dạng trên các bối cảnh bán lẻ, sản xuất và tư vấn.",
-            bgGradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"
+            detailedDescription: "Có kinh nghiệm làm việc trong môi trường nhóm có nhịp độ nhanh, điều phối nhiệm vụ với đồng nghiệp và đóng góp vào các mục tiêu chung. Thực hành trong quá trình làm việc dây chuyền sản xuất tại Abby & Savor và hoạt động bán lẻ tại WinCommerce.",
+            bgImage: "https://source.unsplash.com/1600x900/?teamwork,collaboration"
           },
           {
             id: 3,
             name: "Chú ý Đến Chi Tiết",
             description: "Cách tiếp cận tỉ mỉ và cẩn thận đối với kiểm soát chất lượng, tài liệu và giao hàng dự án.",
-            bgGradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)"
+            detailedDescription: "Tập trung mạnh mẽ vào độ chính xác và kiểm soát chất lượng, đảm bảo mọi đầu ra đáp ứng các tiêu chuẩn yêu cầu. Áp dụng trực tiếp trong vai trò kiểm tra chất lượng tại dây chuyền sản xuất của Abby & Savor.",
+            bgImage: "https://source.unsplash.com/1600x900/?precision,focus"
           },
           {
             id: 4,
             name: "Khả Năng Thích Ứng",
             description: "Thái độ học hỏi tích cực với sự sẵn sàng đón nhận những thách thức và công nghệ mới.",
-            bgGradient: "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)"
+            detailedDescription: "Nhanh chóng điều chỉnh với môi trường, vai trò và trách nhiệm mới. Chuyển đổi thành công qua nhiều ngành công nghiệp bao gồm bán lẻ, sản xuất thực phẩm và dịch vụ kỹ thuật số.",
+            bgImage: "https://source.unsplash.com/1600x900/?change,flexibility"
           },
           {
             id: 5,
             name: "Trách Nhiệm & Kỷ Luật",
             description: "Ý thức trách nhiệm cao và cam kết đáp ứng thời hạn và tiêu chuẩn chất lượng.",
-            bgGradient: "linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)"
+            detailedDescription: "Luôn đáng tin cậy trong việc đáp ứng thời hạn và hoàn thành cam kết. Duy trì sự đúng giờ và trách nhiệm giải trình trên tất cả các kinh nghiệm làm việc, bao gồm cả các dự án khách hàng tự do.",
+            bgImage: "https://source.unsplash.com/1600x900/?discipline,commitment"
           },
           {
             id: 6,
             name: "Tự Quản Lý",
             description: "Khả năng quản lý nhiều dự án độc lập và mang lại kết quả dưới áp lực đã được chứng minh.",
-            bgGradient: "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)"
+            detailedDescription: "Khả năng mạnh mẽ để quản lý khối lượng công việc cá nhân, đặt ưu tiên và mang lại kết quả một cách độc lập mà không cần giám sát chặt chẽ. Được chứng minh thông qua việc quản lý nhiều dự án tự do đồng thời.",
+            bgImage: "https://source.unsplash.com/1600x900/?planning,productivity"
           }
         ]
       }

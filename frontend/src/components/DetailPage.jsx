@@ -78,7 +78,14 @@ const DetailPage = () => {
   return (
     <div className="detail-page-container fade-in">
       {/* Hero Section with Background */}
-      <div className="detail-hero" style={{ background: item.bgGradient }}>
+      <div 
+        className={`detail-hero ${type === 'soft-skill' ? 'detail-hero-image' : ''}`}
+        style={{ 
+          background: type === 'soft-skill' && item.bgImage
+            ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${item.bgImage}) center/cover no-repeat`
+            : item.bgGradient 
+        }}
+      >
         <div className="detail-hero-overlay">
           <Button 
             onClick={() => navigate(`/${language}`)} 
@@ -171,13 +178,25 @@ const DetailPage = () => {
           )}
 
           {/* Description (for skills) */}
-          {item.description && (
+          {item.description && type !== 'soft-skill' && (
             <Card className="detail-card">
               <CardContent className="detail-card-content">
                 <h2 className="detail-section-title">
                   {language === 'en' ? 'Description' : 'Mô Tả'}
                 </h2>
                 <p className="detail-description">{item.description}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Detailed Description (for soft skills) */}
+          {item.detailedDescription && type === 'soft-skill' && (
+            <Card className="detail-card frosted-glass">
+              <CardContent className="detail-card-content">
+                <h2 className="detail-section-title">
+                  {language === 'en' ? 'Detailed Description' : 'Mô Tả Chi Tiết'}
+                </h2>
+                <p className="detail-description">{item.detailedDescription}</p>
               </CardContent>
             </Card>
           )}
