@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
 import { Progress } from './ui/progress';
-import { Avatar, AvatarFallback } from './ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { Mail, Phone, MapPin, Clock, Facebook, Youtube, Globe, ChevronRight } from 'lucide-react';
 import './Portfolio.css';
 
@@ -58,6 +58,10 @@ const Portfolio = () => {
       <section id="hero" className="hero-section">
         <div className="hero-content">
           <Avatar className="hero-avatar">
+            <AvatarImage 
+              src="https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/z3hb0glu_image.png" 
+              alt={data.name}
+            />
             <AvatarFallback className="avatar-fallback">
               {data.name.split(' ').slice(-2).map(n => n[0]).join('')}
             </AvatarFallback>
