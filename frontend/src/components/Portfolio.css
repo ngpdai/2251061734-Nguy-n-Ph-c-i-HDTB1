@@ -85,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  background: url('https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/w1slsigj_Gemini_Generated_Image_yhmx85yhmx85yhmx.png') center/cover no-repeat;
   color: white;
   position: relative;
   overflow: hidden;
@@ -98,7 +98,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {

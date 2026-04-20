@@ -163,42 +163,42 @@ export const portfolioData = {
             name: "Problem Solving",
             description: "Strong logical thinking and analytical approach to breaking down complex business and technical challenges.",
             detailedDescription: "Ability to analyze complex situations, break down problems into manageable steps, and find efficient solutions. Demonstrated through managing customer complaints at WinMart+ and optimizing game account strategies for clients.",
-            bgImage: "https://source.unsplash.com/1600x900/?puzzle,strategy"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           },
           {
             id: 2,
             name: "Team Collaboration",
             description: "Proven ability to work effectively in diverse team environments across retail, production, and consulting contexts.",
             detailedDescription: "Experienced in working within fast-paced team environments, coordinating tasks with colleagues, and contributing to shared goals. Practiced during production line work at Abby & Savor and retail operations at WinCommerce.",
-            bgImage: "https://source.unsplash.com/1600x900/?teamwork,collaboration"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           },
           {
             id: 3,
             name: "Attention to Detail",
             description: "Meticulous and careful approach to quality control, documentation, and project delivery.",
             detailedDescription: "Strong focus on accuracy and quality control, ensuring every output meets required standards. Applied directly in quality inspection roles at Abby & Savor's production line.",
-            bgImage: "https://source.unsplash.com/1600x900/?precision,focus"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           },
           {
             id: 4,
             name: "Adaptability",
             description: "Positive learning attitude with willingness to embrace new challenges and technologies.",
             detailedDescription: "Quick to adjust to new environments, roles, and responsibilities. Successfully transitioned across multiple industries including retail, food production, and digital services.",
-            bgImage: "https://source.unsplash.com/1600x900/?change,flexibility"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           },
           {
             id: 5,
             name: "Responsibility & Discipline",
             description: "High sense of accountability and commitment to meeting deadlines and quality standards.",
             detailedDescription: "Consistently reliable in meeting deadlines and fulfilling commitments. Maintained punctuality and accountability across all work experiences, including freelance client projects.",
-            bgImage: "https://source.unsplash.com/1600x900/?discipline,commitment"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           },
           {
             id: 6,
             name: "Self-Management",
             description: "Demonstrated ability to manage multiple independent projects and deliver results under pressure.",
             detailedDescription: "Strong ability to manage personal workload, set priorities, and deliver results independently without close supervision. Proven through managing multiple freelance projects simultaneously.",
-            bgImage: "https://source.unsplash.com/1600x900/?planning,productivity"
+            bgImage: "https://customer-assets.emergentagent.com/job_profile-deck-4/artifacts/66yvod1p_image.png"
           }
         ]
       }
